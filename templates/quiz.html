@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quiz</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='timer.js') }}" defer></script>
+</head>
+<body>
+<div class="container">
+
+<h2>Quiz</h2>
+<div id="timer"></div>
+
+<form method="POST" action="/submit" id="quizForm" onsubmit="return validateQuiz()">
+    {% for q in questions %}
+        <div class="question">
+            <p>{{ q.question }}</p>
+
+            <label><input type="radio" name="{{ q.id }}" value="1"> {{ q.option1 }}</label>
+            <label><input type="radio" name="{{ q.id }}" value="2"> {{ q.option2 }}</label>
+            <label><input type="radio" name="{{ q.id }}" value="3"> {{ q.option3 }}</label>
+            <label><input type="radio" name="{{ q.id }}" value="4"> {{ q.option4 }}</label>
+        </div>
+    {% endfor %}
+
+    <!-- Error message -->
+    <p id="errorMsg"></p>
+
+    <button type="submit">Submit Quiz</button>
+</form>
+
+
+</div>
+</body>
+
+</html>

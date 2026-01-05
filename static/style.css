@@ -1,0 +1,167 @@
+/* ---------- GLOBAL STYLES ---------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ---------- HOME PAGE CENTERING ---------- */
+.home-container {
+    text-align: center;
+}
+
+.start-btn {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    border-radius: 12px;
+    text-decoration: none;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.start-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(56, 239, 125, 0.4);
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+.container {
+    background: #ffffff;
+    width: 90%;
+    max-width: 800px;
+    padding: 30px 40px;
+    border-radius: 16px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+}
+
+/* ---------- HEADINGS ---------- */
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #2d3748;
+}
+
+/* ---------- TIMER ---------- */
+#timer {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 25px;
+}
+
+/* ---------- QUESTION CARD ---------- */
+.question {
+    background: #f7f9fc;
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    border-left: 6px solid #667eea;
+    transition: transform 0.2s ease;
+}
+
+.question:hover {
+    transform: scale(1.01);
+}
+
+.question p {
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* ---------- OPTIONS ---------- */
+label {
+    display: block;
+    padding: 10px 12px;
+    margin-bottom: 8px;
+    background: #ffffff;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    cursor: pointer;
+    transition: background 0.3s ease, border 0.3s ease;
+}
+
+label:hover {
+    background: #edf2f7;
+    border-color: #667eea;
+}
+
+input[type="radio"] {
+    margin-right: 8px;
+}
+
+/* ---------- BUTTON ---------- */
+button {
+    display: block;
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(90deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(102, 126, 234, 0.4);
+}
+
+/* ---------- RESULT PAGE ---------- */
+.result-box {
+    text-align: center;
+}
+
+.result-box p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.result-score {
+    font-size: 26px;
+    font-weight: bold;
+    color: #667eea;
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+    background: linear-gradient(90deg, #11998e, #38ef7d);
+    padding: 12px 20px;
+    border-radius: 10px;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+}

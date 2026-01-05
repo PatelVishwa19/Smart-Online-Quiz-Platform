@@ -24,7 +24,7 @@ and scalable backend logic.
 ---
 
 ## 📁 Project Structure
-## 📁 Project Structure
+
 smart-quiz-platform/
 ├── app.py
 ├── quiz.db

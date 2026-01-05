@@ -22,3 +22,17 @@ and scalable backend logic.
 - Tools: VS Code, Git
 
 ---
+
+## 📁 Project Structure
+## 📁 Project Structure
+smart-quiz-platform/
+├── app.py
+├── quiz.db
+├── templates/
+│ ├── index.html
+│ ├── quiz.html
+│ └── result.html
+├── static/
+│ ├── style.css
+│ └── timer.js
+└── README.md
